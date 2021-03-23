@@ -52,4 +52,7 @@ app.get('/downloadmp4', async (req, res, next) => {
 	} catch (err) {
 		console.error(err);
 	}
+	app.listen(PORT,() => {
+		console.log(`listening to the port no at  ${port} `);
+	})
 });
